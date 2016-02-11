@@ -1,0 +1,3 @@
+loopTester_default_script                 loopTester_default.script
+loopTester_default_sampling_frequency_Hz  1000
+loopTester_default_sampling_time_sec      10

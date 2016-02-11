@@ -1,0 +1,404 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FlashLoader
+</name>
+</assembly>
+<members>
+<member name="M:ICB2_Flash_Loader_GUI.FlashListView.#ctor(ICB2_Flash_Loader_GUI.FlashListData)">
+	<summary>
+ Constructor
+ </summary>
+	<param name="fl"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.Delete">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.FlashListView_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Handles window closing event
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.OnUpdateStatus">
+	<summary>
+ Fields update status message events
+ </summary>
+	<remarks>
+ Invokes method to update the status fields (only).
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.UpdateStatus">
+	<summary>
+ Updates status fields
+ </summary>
+	<remarks>
+ Updates only the status message fields in the flash list form.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.StartButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Handles Start/Abort/Done button clicks
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListView.getStatusMessage(System.Byte)">
+	<summary>
+ Returns a message associated with the flash item status
+ </summary>
+	<param name="status"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ICB2_Flash_Loader_GUI.FlashListView.Message">
+	<summary>
+ Class associates a color with a text string
+ </summary>
+	<remarks>
+ Used for the status message fields.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.#ctor">
+	<summary>
+ Loader ctor
+ </summary>
+	<remarks>Creates a new flash loader object</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.Delete">
+	<summary>
+ Loader dtor
+ </summary>
+	<remarks>Destructor for the singleton Loader object</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.GetInstance">
+	<summary>
+ Return access to Loader
+ </summary>
+	<returns>Reference to a Loader object</returns>
+	<remarks>Method provides access to the singleton Loader object.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.ParseMessage(System.Int32,System.Byte[])">
+	<summary>
+ Parse ASB messages
+ </summary>
+	<param name="numBytes">Number of bytes in message</param>
+	<param name="msgBuff">Message received</param>
+	<remarks>Method parses ASB messages which in this application are
+ received in the Listener object.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.DeserializeString(System.Byte[]@,System.Int32@)">
+	<summary>
+ Convert byte array elements into a String
+ </summary>
+	<param name="byteArray">Array to convert to a String</param>
+	<param name="index">Index into array where conversion starts</param>
+	<returns>A String from the byte array</returns>
+	<remarks>Reads one String out of the specified byte stream starting at
+ the specified location. The index passed as a parameter is
+ updated to the start of the next value in the byte array.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.GetVersion">
+	<summary>
+ Return version string
+ </summary>
+	<returns>Firmware version</returns>
+	<remarks>Method returns the current Loader object firmware
+  version String.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.WriteFlash">
+	<summary>
+ Write file to ASB flash
+ </summary>
+	<remarks>Method writes the currently selected file to flash memory.
+ A file should already have been selected before calling this method,
+ but it bails out if <c>mFilename</c> is empty.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.getNumRecords">
+	<summary>
+ Return number of records to flash
+ </summary>
+	<returns>Num hex records to flash</returns>
+	<remarks>
+ Used by the progress bar to track flash progress.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.GetFlashStateMessage">
+	<summary>
+ Return current flash state message
+ </summary>
+	<returns>Flash state message</returns>
+	<remarks>Method returns the current flash state message String.
+ The message is updated during the flash process to indicate
+ the action in progress, errors, etc.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.viewNumRecordsFlashed">
+	<summary>
+ Return number of records flashed so far
+ </summary>
+	<returns>Num hex records flashed</returns>
+	<remarks>
+ Used by the progress bar to track flash progress.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.GetState">
+	<summary>
+ Return Loader object's flash state
+ </summary>
+	<returns>Loader's flash state</returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.ClearFlashComplete">
+	<summary>
+ Clear Loader's FLASH_COMPLETE state
+ </summary>
+	<remarks>
+ Method supplies the GUI with a way to reset for another
+ flash by clearing the previously completed flash condition.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.getICB2IPAddr">
+	<summary>
+ Return current ASB IP address
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.setICB2IPAddr(System.Net.IPAddress)">
+	<summary>
+ Set a new ASB IP address
+ </summary>
+	<param name="addr">Prospective new IP address.</param>
+	<returns>True if IP accepted, False otherwise.</returns>
+	<remarks>The current IP is unchanged if the one provided in the argument
+ fails for any reason.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.ClearFilename">
+	<summary>
+ Clears flash filename to ""
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.clearVersion">
+	<summary>
+ Clears the version string to ""
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.GetFilename">
+	<summary>
+ Return current name of file to flash
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.SetFilename(System.String)">
+	<summary>
+ Set new file to flash
+ </summary>
+	<param name="file"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.SendMessage(System.Byte[],System.Int32)">
+	<summary>
+ Send a message to the ASB
+ </summary>
+	<param name="mBuff">Message to send</param>
+	<param name="nBytes">Number of bytes in message</param>
+	<remarks>Method sends the provided message to the ASB currently
+ set up for communication.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.QueryICB2Version">
+	<summary>
+ Query ICB2 for firmware version
+ </summary>
+	<remarks>Method sends a message to the current ICB2 asking for
+ its firmware version string. The return message is storead in
+ the Loader object's <c>mVersion</c> member.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.Loader.SendHexRecord">
+	<summary>
+ Send a hex record for flash
+ </summary>
+	<remarks>
+ Forms and sends a single hex record to the ASB to be flashed.
+ </remarks>
+</member><member name="T:ICB2_Flash_Loader_GUI.Loader">
+	<summary>
+ Flash loader class definition
+ </summary>
+	<remarks>
+ Defines members and methods associated with the ASB flash loader
+ utility application. Only a single Loader instance can be created.
+ The Loader object manages a single FlashItem and GUI interfaces.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.#ctor">
+	<summary>
+ Flash loader application constructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.MainGUIForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Flash loader application exit cleanup
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.ExitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Menu exit
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.FilenameButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Opens dialog to select a file to flash
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.OpenFlashListToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Opens a flash list file
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+ Mechanism to flash a list of files to ASBs.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.FlashButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Flash 'em
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Creates a progress bar and calls the flash write method.</remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.OnDataChanged">
+	<summary>
+ Loader has data to update
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.UpdateFields">
+	<summary>
+ Updates info display of the loader object
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.IpAddressControl_SpecialKeyEvent(System.Object,IPAddressControlLib.SpecialKeyEventArgs)">
+	<summary>
+ Processes IP control key events
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.MainGUIForm.AboutToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ The Help-&gt;About handler
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.#ctor">
+	<summary>
+ Flash list object ctor
+ </summary>
+	<remarks>
+ The fundamental object dealing with flashing a whole list of firmware.
+ Parsing the list file and managing the flash instruction sequences are
+ its main tasks. The view for info display and control is done by the
+ FlashListView object.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.GetInstance">
+	<summary>
+ Returns access to the flash list object
+ </summary>
+	<returns>Reference to the singleton flash list object.</returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.Delete">
+	<summary>
+ Destructor
+ </summary>
+	<remarks>
+ Sets interlock so DoFlash thread exits.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.StartFlash">
+	<summary>
+ Starts flashing the list
+ </summary>
+	<remarks>
+ Creates a progress bar control and kicks off the thread that
+ does the actual flashing.
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.FlashListComplete">
+	<summary>
+ Returns state of flash list completion
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ICB2_Flash_Loader_GUI.FlashListData.Filename">
+	<summary>
+ Filename of flash list
+ </summary>
+	<value>filename</value>
+	<returns>filename</returns>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.ParseFile(System.String)">
+	<summary>
+ Parses a multi-ICB2 flash list
+ </summary>
+	<returns>True if success, False if failed.</returns>
+	<remarks>
+ Stream reads a list filename and extracts out the supplied IP and
+ filename to be flashed at that IP. Entries are comma separated.
+ Comment lines begine with "#".
+ </remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.DoFlash">
+	<summary>
+ Thread that flashes the list of ICB2s
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashListData.FlashItem.#ctor(System.String,System.String)">
+	<summary>
+ Flash item ctor
+ </summary>
+	<param name="ip"></param>
+	<param name="name"></param>
+	<remarks></remarks>
+</member><member name="P:ICB2_Flash_Loader_GUI.FlashListData.FlashItem.IPAddr">
+	<summary>
+ Access to flash object's IP (as a string)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ICB2_Flash_Loader_GUI.FlashListData.FlashItem.Filename">
+	<summary>
+ Access to flash object's firmware file to flash
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ICB2_Flash_Loader_GUI.FlashListData.FlashItem.Status">
+	<summary>
+ Access to flash object's status
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ICB2_Flash_Loader_GUI.FlashListData.FlashItem">
+	<summary>
+ Defines the individual flashable items
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ICB2_Flash_Loader_GUI.FlashListData">
+	<summary>
+ Implements flashing multiple ICB2s in a list.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ICB2_Flash_Loader_GUI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ICB2_Flash_Loader_GUI.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ICB2_Flash_Loader_GUI.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashProgress.OnShowForm">
+	<summary>
+ Event handler to show the progress bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ICB2_Flash_Loader_GUI.FlashProgress.ShowForm">
+	<summary>
+ Make progress bar visible
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

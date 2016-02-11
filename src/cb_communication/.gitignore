@@ -1,0 +1,17 @@
+*~
+*.pyc
+CMakeCache.txt
+CMakeFiles/
+bin/
+cmake_install.cmake
+lib/
+.cproject
+.project
+Makefile
+x86_64xeno
+doc/html
+doc/latex
+.pydevproject
+.settings/
+python/mainWindowUi.py
+*#*

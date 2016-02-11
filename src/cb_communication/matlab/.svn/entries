@@ -1,0 +1,41 @@
+9
+
+dir
+145
+svn+ssh://miro.usc.edu/Network/Servers/miro/Volumes/miro/pastor/svn/CBcomm/trunk/matlab
+svn+ssh://miro.usc.edu/Network/Servers/miro/Volumes/miro/pastor/svn/CBcomm
+
+
+
+2009-09-12T11:26:42.856507Z
+145
+clmc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bdc38244-4bab-4c7c-8194-20f674bc6d48
+
+
+
+
+
+
+0
+
+SDCStatesTools
+dir
+
+monitoring_network
+dir
+

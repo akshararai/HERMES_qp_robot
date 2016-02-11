@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_main.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_main.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_rmain.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_rmain.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_commands.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_commands.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_motor.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_motor.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_motor_xeno.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_motor_xeno.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_sensor_proc_unix.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_sensor_proc_unix.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_sensor_proc_xeno.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_sensor_proc_xeno.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_simulation.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_simulation.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_task.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_task.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/SL_user_vision.c">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/SL_user_vision.c" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/base_state_estimation.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/base_state_estimation.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/gdc_sl_interface.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/gdc_sl_interface.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../hermesCore/src/valve_controller.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../hermesCore/src/valve_controller.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <content url="file:///usr/src/gtest">
+      <sourceFolder url="file:///usr/src/gtest" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
