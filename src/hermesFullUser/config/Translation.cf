@@ -5,41 +5,41 @@ Note: the file is parsed according to keywords, after the keyword,
 /* format: keyword, position slope, pos offset, vel slope, vel offset, torque slope, torque offset, desired torque offset*/
 
 
-L_SFE	-18402		5517	118	0	12.2	0	0	1
+L_SFE	-18402		5184	118	0	12.2	0	0	1
 L_SAA	-18074		-12880	-118	0	-12.3	0	0	1
 L_HR	-15862   	-140	120	0	1	0	0	1
-L_EB	18293		-14881	-118	0	-12.3	0	0	1
+L_EB	18293		-13855	-118	0	-12.3	0	0	1
 L_WR	-11205		966 	119	0	1	0	0	1
 L_WFE	22574		8765  	8257	0	234.3	0	0	1
 L_WAA	15953	 	5888	-8257	0	259.6	0	0	1
 						
-R_SFE	17577		-4146	120	0	12	0	0	1
+R_SFE	17577		-4027	120	0	12	0	0	1
 R_SAA	18476		20797 	-119	0	12.3	0	0	1
 R_HR	18726		-9224  	115	0	1	0	0	1
-R_EB	-17726		10565  118	0	12.1	0	0	1
+R_EB	-17726		11267  118	0	12.1	0	0	1
 R_WR	15106		3368   	118	0	1	0	0	1
 R_WFE	22742		13823 	8257	0	228.7	0	0	1
 R_WAA	16211		4024  	8257	0	263.2	0	0	1
 						
-L_HFE	 17808		-19409	56	0	6.143	 0	-0.5	1##updated pos offset + torque
+L_HFE	 17808		-19409	56	0	6.143	 0	0.0	1##updated pos offset + torque
 L_HAA	-17965		-3024	-55	0	2.718	 0	-5.0	1##updated pos offset + torque
 L_HFR	-16370		2020	59	0	2.834	 0 	0	1##updated pos offset + torque
 L_KFE	-18943		12327	-59	0	10.79	 0 	-2.6	-1##updated pos offset + torque
 L_AR	 17707	  	9096	59	0	-11.00	 0 	0	1##updated torque (avg. compression and decompression)
 L_AFE	-17660		5637	56	0	-2.833	 0 	6.3	1##updated pos offset + torque
-L_AAA	-19000		2676	-58	0	3.237	 0 	2.47	1##updated pos offset + torque
+L_AAA	-20486		987	-58	0	3.237	 0 	2.47	1##updated pos offset + torque
   						
-R_HFE	-18462		3632	-58	0	-6.287	 0 	-0.75	1##updated pos offset + torque
+R_HFE	-18462		3632	-58	0	-6.287	 0 	-0.0	1##updated pos offset + torque
 R_HAA	18140		-6154 	-56	0	-2.952	 0 	-2.20	1##updated pos offset + torque
 R_HFR	11268		-15711	59	0	2.984	 0 	0	1##updated pos offset + torque
 R_KFE	18215		-15326	57	0	-10.98	 0 	-1.50	1##updated pos offset + torque
 R_AR	-17716		6333  	59	0	11.48	 0 	0	1##update torque (avg. compression and decompression)
 R_AFE	18249		-2305	58	0	3.162    0 	-5.7	1##updated pos offset + torque
-R_AAA	20056		-2051	-60	0	-2.831	 0 	-0.95	1##updated pos offset + torque
+R_AAA	20197		-2220	-60	0	-2.831	 0 	0.0	1##updated pos offset + torque
 						
-B_TR	-14088		-2177   -59	0	3.084	 0 	0	1##updated pos offset + torque
-B_TAA	17279		847  	-59	0	9.277	 0	0	1##updated pos offset + torque (avg. compression and decompression)
-B_TFE	18322		-8245	-59	0	6.342	 0	0 	1##updated pos offset + torque (avg. compression and decompression)
+B_TR	-18708		2807   -59	0	3.084	 0 	0	1##updated pos offset + torque
+B_TAA	17269		1637  	-59	0	-8.566	 0	0.0	1##updated pos offset + torque (avg. compression and decompression)
+B_TFE	18322		-10051	-59	0	-7.400	 0	0.0 	1##updated pos offset + torque (avg. compression and decompression)
 
 B_HN	42595		6272	  -8257	0	1	0 	0	1
 B_HT	90795		6440	  8257	0	1	0 	0	1

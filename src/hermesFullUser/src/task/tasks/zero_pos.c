@@ -112,31 +112,31 @@ init_zero_task(void)
   target[L_HFR].th = 0.0;
   target[L_KFE].th = 0.25;
   target[L_AR].th = 0.0;
-  target[L_AFE].th = 0.35;
-  target[L_AAA].th = 0.05;
+  target[L_AFE].th = 0.25;
+  target[L_AAA].th = 0.0;
 
 
-  target[R_HFE].th = 0.25;
+  target[R_HFE].th = 0.2;
   target[R_HAA].th = -0.1;
   target[R_HFR].th = 0.0;
-  target[R_KFE].th = 0.3;
+  target[R_KFE].th = 0.25;
   target[R_AR].th = 0.1;
   target[R_AFE].th = 0.25;
-  target[R_AAA].th = -0.0;
+  target[R_AAA].th = 0.0;
 
-  target[B_TR].th = -0.3;
+  target[B_TR].th = -0.0;
   target[B_TAA].th = 0.0;
-  target[B_TFE].th = -0.17;
+  target[B_TFE].th = 0.0;
 
   printf("Reached 2 \n");
 
-  target[B_HN].th = 0.100;
-  target[B_HT].th = -0.050;//  thd= 0.000  thdd=    0.000  ff=  0.00
- target[B_HR].th= 0.300;//  thd= 0.000  thdd=    0.000  ff=  0.00
- target[R_EP].th = 0.000;//  thd= 0.000  thdd=    0.000  ff=  0.00
- target[R_ET].th= 0.000;//  thd= 0.000  thdd=    0.000  ff=  0.00
- target[L_EP].th= 0.000;//  thd= 0.000  thdd=    0.000  ff=  0.00
- target[L_ET].th=-0.000;//  thd= 0.000  thdd=    0.000  ff=  0.00
+  target[B_HN].th = 0.1;
+  target[B_HT].th = -0.002;//  thd= 0.000  thdd=    0.000  ff=  0.00
+ target[B_HR].th= -0.2;//  thd= 0.000  thdd=    0.000  ff=  0.00
+ target[R_EP].th = 0.006;//  thd= 0.000  thdd=    0.000  ff=  0.00
+ target[R_ET].th= 0.009;//  thd= 0.000  thdd=    0.000  ff=  0.00
+ target[L_EP].th= 0.2;//  thd= 0.000  thdd=    0.000  ff=  0.00
+ target[L_ET].th=-0.2;//  thd= 0.000  thdd=    0.000  ff=  0.00
 target[L_THR].th= 0.000;//  thd= 0.000  thdd=    0.000  ff=  0.00
 target[L_THF].th= 0.200;//  thd= 0.000  thdd=    0.000  ff=  0.00
  target[L_IF].th= 0.400;//  thd= 0.000  thdd=    0.000  ff=  0.00
